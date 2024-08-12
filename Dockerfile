@@ -5,6 +5,8 @@ COPY pom.xml .
 COPY src src
 
 # Copy Maven wrapper
+COPY pom.xml .
+COPY src src
 COPY mvnw .
 COPY .mvn .mvn
 
@@ -17,6 +19,6 @@ FROM openjdk:20-jdk
 VOLUME /tmp
 
 # Copy the JAR from the build stage
-COPY --from=build /banque/target/banque-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/banque-0.0.1-SNAPSHOT.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
 EXPOSE 8081
