@@ -1,4 +1,4 @@
-package com.API.banque.service;
+/*package com.API.banque.service;
 import com.API.banque.repository.ClientRepository;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -36,3 +36,4 @@ public class AuthService {
                 .compact();
     }
 }
+*/
